@@ -1,4 +1,4 @@
-/*Header*/
+/*   Header   */
 
 header{
     font-family: 'Verdana';
@@ -35,3 +35,31 @@ span {display: inline-block}
     align-items: flex-end;
     justify-content: space-around;
 }
+
+/*   Body   */
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    border: 1px solid #000;
+    padding-top: 40px;
+}
+
+.column-lg,
+.column-md,
+.column-sm {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+
+.column-lg {width: 630px;}
+
+.column-md {width: 300px;}
+
+.column-sm {width: 240px;}
+
+.article,
+.image {border: 1px solid #000;}
