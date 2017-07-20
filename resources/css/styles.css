@@ -4,10 +4,8 @@ header{
     font-family: 'Verdana';
     font-size: 14px;
     font-weight: bold;
-    border-bottom: 1px solid #000;
     padding-bottom: 10px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 20;
@@ -17,11 +15,14 @@ a {color: #000;}
 
 span {display: inline-block}
 
+.container,
+.nav,
+.main-content {justify-content: space-around;}
+
 .container {
     width: 200px;
     display: inline-flex;
     align-items: center;
-    justify-content: space-around;
     font-size: 12px;
 }
 
@@ -33,18 +34,15 @@ span {display: inline-block}
     width: 350px;
     display: inline-flex;
     align-items: flex-end;
-    justify-content: space-around;
 }
 
 /*   Body   */
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-start;
-    border: 1px solid #000;
     padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .column-lg,
@@ -52,7 +50,6 @@ span {display: inline-block}
 .column-sm {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
 }
 
 .column-lg {width: 630px;}
@@ -65,8 +62,7 @@ span {display: inline-block}
     font-family: Georgia;
     font-size: 17px;
     color: #000;
-    
-    border: 1px solid #000;
+    height: 250px;
 }
 
 .white {
@@ -76,24 +72,32 @@ span {display: inline-block}
     color: #fff;
 }
 
+.main-story,
+.story-1,
+.story-2,
+.story-3 {
+    display: inline-flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.story-1,
+.story-2,
+.story-3 {text-align: center;}
+
 .main-story {
     background: url('/resources/img/img-story-main.png');
-    display: flex;
     font-size: 40px;
-    align-items: flex-start;
 }
 
 .story-1 {
     background: url('/resources/img/img-story-1.png');
-    display: flex;
 }
 
 .story-2 {
     background: url('/resources/img/img-story-2.png');
-    display: flex;
 }
 
 .story-3 {
     background: url('/resources/img/img-story-3.png');
-    display: flex;
 }
